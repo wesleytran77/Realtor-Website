@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+:root{
+    --darkColor: #0c1115;
+    --yellow: #F0B000;
+    --darkText: #333333;
+    --offWhite: #fcfcfc;
+    --lightText: #FFFFFF99;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.secondTab{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    width: 12%;
+    display: flex;
+}
+
+.logo > *{
+    margin: .2rem;
+}
+
+
+.tabs a{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 1.3rem;
+    color: var(--darkText);
+}
+
+.tabs a:hover{
+    color: var(--yellow);
+}
+
+.tabs button {
+    padding: .7rem;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+.firstTab{
+    padding: .5rem 2rem;
+    width: 100%;
+    background-color: var(--darkColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.phone{
+    display: flex;
+    
+}
+
+.phone > *{
+    fill: var(--yellow);
+    font-size: 1.3rem;
+    margin: .2rem;
+}
+
+.socials svg{
+    fill: var(--yellow);
+    margin: .3rem;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location > *{
+    font-size: 1rem;
+    margin: .3rem;
+    fill: var(--yellow);
+}
+.miniContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.miniContainer h1{
+    font-family: 1.5rem;
+    font-weight: 600;
+}
+
+.miniContainer p{
+    font-size: .5rem;
+    letter-spacing: 1px;
+}
+
+.footer{
+    padding: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    color: white;
+    background-color: var(--darkColor);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.footerLogo{
+    display: flex;
+}
+
+.footerLogo img{
+    fill: var(--yellow);
+    width: 12%;
+    display: flex;
+}
+
+.footerLogo > *{
+    margin: .2rem;
+}
+.section{
+    text-align: center;
+}
+
+.section h1{
+    color: var(--yellow);
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.section p, .section a{
+    text-decoration: none;
+    color: var(--lightText);
+    margin: 1rem;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.section svg{
+    margin: 1rem .2rem;
+    fill: var(--lightText);
+}
+
+.section a{
+    display: block;
+    margin: 1rem;
+}
+
+.section a:hover{
+    color: var(--yellow);
+}
+
+.section > *{
+    letter-spacing: 1px;
+}
+
+.secondTab a{
+    text-decoration: none;
+    color: var(--darkText);
+}
+  
+/* navbar and footer styles (END)*/
+
+/*no*/
+.contact{
+    padding: 5rem;
+    width: 100%;
+    background-image: url("contactPic.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*no*/
+.boxContainer{
+    width: 100%;
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+/*no*/
+.tint{
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: multiply;
+}
+
+/*no*/
+.title, .title span{
+    word-spacing: 3px;
+    font-family: "Oswald";
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--yellow);
+}
+
+/* .title span{
+    font-family: "Oswald";
+} */
+
+/*no*/
+.box{
+    text-align: center;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    background-color: var(--offWhite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*no*/
+.box > *{
+    margin: 1rem;
+    fill: var(--yellow);
+}
+/*no*/
+.box h1{
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+/*no*/
+.titleContainer{
+    user-select: none;
+    text-align: center;
+}
+/*no*/
+.titleContainer p{
+    color: white;
+    letter-spacing: 1px;
+}
+/*no*/
+.box p{
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--darkText)
+}
+/*no*/
+.titleContainer p{
+    font-style: italic;
+}
+/*no*/
+.box img{
+    width: 15%;
+}
+
+.phone:hover{
+    cursor: pointer;
+}
+
+.excludeSection{
+    text-align: center;
+}
+
+.excludeSection h1{
+    color: var(--yellow);
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.excludeSection svg{
+    margin: 1rem .2rem;
+    fill: var(--lightText);
+}
+
+
+/*make the svgs bigger, fix footer not aligned center, responsiveness ,custom LIT scroll bar*/

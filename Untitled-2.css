@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    --darkColor: #0c1115;
+    --yellow: #F0B000;
+    --darkText: #333333;
+    --offWhite: #fcfcfc;
+    --lightText: #FFFFFF99;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.secondTab{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    width: 12%;
+    display: flex;
+}
+
+.logo > *{
+    margin: .2rem;
+}
+
+
+.tabs a{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 1.3rem;
+    color: var(--darkText);
+}
+
+.tabs a:hover{
+    color: var(--yellow);
+}
+
+.tabs button {
+    padding: .7rem;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+.firstTab{
+    padding: .5rem 2rem;
+    width: 100%;
+    background-color: var(--darkColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.phone{
+    display: flex;
+}
+
+.phone > *{
+    fill: var(--yellow);
+    font-size: 1.3rem;
+    margin: .2rem;
+}
+
+.socials svg{
+    fill: var(--yellow);
+    margin: .3rem;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location > *{
+    font-size: 1rem;
+    margin: .3rem;
+    fill: var(--yellow);
+}
+
+.miniContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.miniContainer h1{
+    font-weight: 600;
+}
+
+.miniContainer p{
+    font-size: .5rem;
+    letter-spacing: 1px;
+}
+
+.find{
+    background-image: url("houseBG.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    /* padding: 10rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tint{
+    background-color: rgba(0,0,0, .6);
+    background-blend-mode: multiply;
+}
+
+.find > *{
+    margin: 1rem;
+}
+
+.find h1, .find span{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.find p{
+    font-style: italic;
+    width: 50%;
+    color: white;
+    font-weight: 300;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.callContainer button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--yellow);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.callContainer svg{
+    fill: white;
+    margin-right: 5px;
+}
+
+.about{
+    background-image: url("lines.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about img{
+    width: 30%;
+}
+
+.textContainer h2{
+    color: var(--yellow);
+    font-size: 1rem;
+}
+
+.textContainer > *{
+    margin: 1rem;
+}
+
+.textContainer h1, .textContainer span{
+    word-spacing: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.textContainer p{
+    color: var(--darkText);
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.footer{
+    padding: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    color: white;
+    background-color: var(--darkColor);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.section{
+    text-align: center;
+}
+
+.section h1{
+    color: var(--yellow);
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.section p, .section a{
+    display: block;
+    text-decoration: none;
+    color: var(--lightText);
+    font-size: .9rem;
+    font-weight: 300;
+    margin: 1rem;
+}
+
+
+
+.section a:hover{
+    color: var(--yellow);
+}
+
+.section > *{
+    letter-spacing: 1px;
+}
+
+.secondTab a{
+    text-decoration: none;
+    color: var(--darkText);
+}
+
+.phone:hover{
+    cursor: pointer;
+}
+
+
+.excludeSection{
+    text-align: center;
+}
+
+.excludeSection h1{
+    color: var(--yellow);
+    font-weight: 400;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.excludeSection svg{
+    margin: 1rem .2rem;
+    fill: var(--lightText);
+}
