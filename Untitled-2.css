@@ -361,6 +361,12 @@ body{
     width: 100%;
 }
 
+.phone > *{
+    color: white;
+    text-decoration: none;
+}
+
+
 
 @media (max-width: 700px){ /*past was max:500*/
     .about{
