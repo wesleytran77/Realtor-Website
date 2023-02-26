@@ -361,7 +361,7 @@ body{
     width: 100%;
 }
 
-.phone > *{
+.phone h1{
     color: white;
     text-decoration: none;
 }
