@@ -126,7 +126,6 @@ body{
     background-repeat: no-repeat;
     height: 70vh;
     width: 100%;
-    /* padding: 10rem; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +217,7 @@ body{
     color: white;
     background-color: var(--darkColor);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .section{
@@ -276,3 +275,187 @@ body{
     margin: 1rem .2rem;
     fill: var(--lightText);
 }
+
+.medinaInfo{
+    text-align: center;
+}
+
+.medinaInfo img{
+    width: 80%;
+}
+
+.medinaInfo h1{
+    font-weight: 400;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: var(--lightText)
+}
+
+.listings{
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listingsContainer{
+    margin: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.listingsContainer img{
+    margin: .5rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.forms{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.forms a{
+    border-radius: 10px;
+    border: none;
+    background-color: var(--yellow);
+    color: white;
+    padding: 1rem;  
+    text-decoration: none;
+    font-size: .9rem;
+    margin: 1rem;
+    letter-spacing: 1px;
+}
+
+.forms a:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+}
+
+.callContainer button:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.headerHolder h1, .headerHolder span{
+    border-bottom: 1px solid var(--yellow);
+    width: 20%;
+    padding: 1rem 0;
+    font-family: "Oswald";
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.headerHolder{
+    padding: 2rem;
+    background-color: #F2F3F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+@media (max-width: 700px){ /*past was max:500*/
+    .about{
+        flex-direction: column;
+        padding: 1rem;
+        padding-bottom: 2rem;
+    }
+    .about img{
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    .headerHolder h1{
+        width: 100%;
+    }
+    .forms{
+        margin-bottom: 1rem;
+        flex-direction: column;
+    }
+
+    .forms a{
+        margin: .5rem;
+    }
+
+    .footer{
+        padding: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer > *{
+        margin: 1rem;
+    }
+
+    .tabs{
+        padding-top: 1.5rem;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+    .listings{
+        padding: 0;
+    }
+
+    .listingsContainer{
+        margin-bottom: .5rem;
+    }
+
+    .firstTab{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .socials{
+        display: none;
+    }
+
+    .find h1{
+        margin: 0;
+        font-size: 2.2rem;
+    }
+
+    .find h1 span{
+        font-size: 2.2rem
+    }
+
+    .find p{
+        font-size: 14px
+    }
+
+
+    .callContainer{
+        margin: 0;
+    }
+    
+    .callContainer button{
+        padding: .5rem;
+        font-size: 1.2rem;
+    }
+
+    .find{
+        padding-bottom: 1rem;
+    }
+    /*  */
+    .tabs{
+        padding: 1rem;
+    }
+
+    .secondTab{
+        flex-direction: column;
+        padding: .3rem;
+    }
+    
+}
+
