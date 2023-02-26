@@ -129,7 +129,7 @@ body{
     color: white;
     background-color: var(--darkColor);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     
 }
 
@@ -188,11 +188,9 @@ body{
     color: var(--darkText);
 }
   
-/* navbar and footer styles (END)*/
 
-/*no*/
 .contact{
-    padding: 5rem;
+    padding: 5rem 0;
     width: 100%;
     background-image: url("contactPic.jpeg");
     background-size: cover;
@@ -203,22 +201,32 @@ body{
     flex-direction: column;
 }
 
-/*no*/
-.boxContainer{
+/* .boxContainer{
     width: 100%;
     margin: 5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    flex-wrap: wrap;
+} */
+
+.boxContainer{
+    width: 100%;
+    margin: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
 }
 
-/*no*/
+
+
 .tint{
     background-color: rgba(0,0,0,.6);
     background-blend-mode: multiply;
 }
 
-/*no*/
 .title, .title span{
     word-spacing: 3px;
     font-family: "Oswald";
@@ -229,12 +237,10 @@ body{
     color: var(--yellow);
 }
 
-/* .title span{
-    font-family: "Oswald";
-} */
-
-/*no*/
 .box{
+    width: 25rem;
+    height: 15rem;
+    margin: 1rem 0;
     text-align: center;
     border-radius: 8px;
     padding: 1rem 2rem;
@@ -243,40 +249,40 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
-/*no*/
+
 .box > *{
     margin: 1rem;
     fill: var(--yellow);
 }
-/*no*/
+
 .box h1{
     font-size: 1.1rem;
     font-weight: 900;
     letter-spacing: 1px;
 }
 
-/*no*/
+
 .titleContainer{
     user-select: none;
     text-align: center;
 }
-/*no*/
+
 .titleContainer p{
     color: white;
     letter-spacing: 1px;
 }
-/*no*/
+
 .box p{
     font-weight: 300;
     letter-spacing: 1px;
     color: var(--darkText)
 }
-/*no*/
+
 .titleContainer p{
     font-style: italic;
 }
-/*no*/
 .box img{
     width: 15%;
 }
@@ -301,5 +307,71 @@ body{
     fill: var(--lightText);
 }
 
+.medinaInfo{
+    text-align: center;
+}
+
+.medinaInfo img{
+    width: 80%;
+}
+
+.medinaInfo h1{
+    font-weight: 400;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: var(--lightText)
+}
+
+@media (max-width: 500px){ /*past waas 500 for mobile*/
+    .footer{
+        padding: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer > *{
+        margin: 1rem;
+    }
+
+    .boxContainer{
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact{
+        padding: 1rem;
+    }
+
+    .box{
+        width: 90%;
+    }
+
+    .tabs{
+        padding: 1rem;
+    }
+
+    .secondTab{
+        flex-direction: column;
+        padding: .3rem;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .firstTab{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .socials{
+        display: none;
+    }
+}
 
 /*make the svgs bigger, fix footer not aligned center, responsiveness ,custom LIT scroll bar*/
